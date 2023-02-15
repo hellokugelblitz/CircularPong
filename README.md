@@ -2,10 +2,10 @@
 This is a little game I made in p5js as a prototype. You play pong by yourself in a circle.
 
 Here's what it looks like:
-![Game picture](gamedemo.png?raw=true "Gameimage")
+![Game picture](gamedemo.png?raw=true "Gameimage"=250x250)
 
 There is also a rainbow mode:
-![Rainbow Mode Demo](rainbowdemo.gif?raw=true "Rainbowimage")
+![Rainbow Mode Demo](rainbowdemo.gif?raw=true "Rainbowimage"=250x250)
 
 As you score more and more the circle gets larger and larger, making it harder to continue.
 This is just a prototype but it taught me a lot about p5 and just js in general, so good times!
