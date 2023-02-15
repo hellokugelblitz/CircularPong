@@ -2,7 +2,9 @@
 This is a little game I made in p5js as a prototype. You play pong by yourself in a circle.
 
 Here's what it looks like:
-<img src="gamedemo.png" width="200" height="400" />
+</br>
+<img src="gamedemo.png" width="300" height="300" />
+</br>
 ![Game picture](gamedemo.png?raw=true "Gameimage"=250x250)
 
 There is also a rainbow mode:
