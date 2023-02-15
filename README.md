@@ -5,7 +5,7 @@ Here's what it looks like:
 ![Game picture](gamedemo.png?raw=true "Gameimage")
 
 There is also a rainbow mode:
-![Rainbow Mode Demo](https://github.com/hellokugelblitz/rainbowdemo.gif)
+![Rainbow Mode Demo](rainbowdemo.gif?raw=true "Rainbowimage")
 
 As you score more and more the circle gets larger and larger, making it harder to continue.
 This is just a prototype but it taught me a lot about p5 and just js in general, so good times!
