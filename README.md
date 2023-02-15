@@ -3,9 +3,8 @@ This is a little game I made in p5js as a prototype. You play pong by yourself i
 
 Here's what it looks like:
 </br>
-<img src="gamedemo.png" width="300" height="300" />
+<img src="gamedemo.png" width="450" height="450" />
 </br>
-![Game picture](gamedemo.png?raw=true "Gameimage"=250x250)
 
 There is also a rainbow mode:
 ![Rainbow Mode Demo](rainbowdemo.gif?raw=true "Rainbowimage"=250x250)
