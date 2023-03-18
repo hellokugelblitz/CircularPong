@@ -206,6 +206,7 @@ function setup() {
         for (let i = 0; i < colors.length; i++) {
             console.log(colors[i])
             colors[i] = color(randInt(100,255), randInt(100,255), randInt(100,255));
+           
         }
     }
 
@@ -296,6 +297,9 @@ function draw() {
 
     //Set background color
     background(colors[0]);
+
+    //Change the background color of the actual site to match the background color of the bg
+    document.body.style.background = colors[0];
 
     //Create play area circle
     fill(colors[1]);
