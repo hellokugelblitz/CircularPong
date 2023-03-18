@@ -3,11 +3,12 @@ This is a little game I made in p5js as a prototype. You play pong by yourself i
 
 Here's what it looks like:
 </br>
-<img src="gamedemo.png" width="450" height="450" />
+<img src="gamedemo.png" width="500" height="450" />
 </br>
 
 There is also a rainbow mode:
-![Rainbow Mode Demo](rainbowdemo.gif?raw=true "Rainbowimage"=250x250)
+</br>
+![Rainbow Mode Demo](rainbowgif.gif?raw=true "Rainbowimage")
 
 As you score more and more the circle gets larger and larger, making it harder to continue.
 This is just a prototype but it taught me a lot about p5 and just js in general, so good times!
