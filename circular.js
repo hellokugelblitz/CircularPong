@@ -2,8 +2,8 @@ const program_dimension = 700;
 
 //Global game variables
 const DEBUG_MODE = false;
-const GRAVITY_MODE = false;
-const DISPLAY_TEXT_SCORE = false;
+let GRAVITY_MODE = false;
+let DISPLAY_TEXT_SCORE = false;
 let RAINBOW_MODE = false;
 let rainbow_mode_toggle = true;
 const gravity = 0.3;
@@ -36,11 +36,29 @@ let ball_y = middle_y;
 let ball_size = 30;
 var ball; //We need to initialize the ball here
 
+
+/*Functions for buttons */
 function rainbow_mode(){
     if(RAINBOW_MODE){
         RAINBOW_MODE = false;
     } else {
         RAINBOW_MODE = true;
+    }
+}
+
+function gravity_mode(){
+    if(GRAVITY_MODE){
+        GRAVITY_MODE = false;
+    } else {
+        GRAVITY_MODE = true;
+    }
+}
+
+function text_score(){
+    if(DISPLAY_TEXT_SCORE){
+        DISPLAY_TEXT_SCORE = false;
+    } else {
+        DISPLAY_TEXT_SCORE = true;
     }
 }
 
@@ -84,6 +102,10 @@ class Ball {
         this.speed_cap(4);
         this.x += this.vx;
         this.y += this.vy;
+
+        if(GRAVITY_MODE){
+            this.y += gravity;
+        }
 
         //This shrinks the ball, once it is outside of the rotation radius.
         if(dist(this.x, this.y, middle_x, middle_y) > rotation_radius + 25){
@@ -190,13 +212,13 @@ function setup() {
     //Randomizing the placement of the paddle on startup (-180,180)
     angle += Math.floor(Math.random() * 360) - 180;
 
-    //Creating the rectangles initial position and initilizing all of the points in the polygon.
+    //Creating the rectangles initial position and initializing all of the points in the polygon.
     poly[0] = createVector(rect_x,rect_y);
     poly[1] = createVector(rect_x + rect_height,rect_y);
     poly[2] = createVector(rect_x+rect_height,rect_y+rect_width);
     poly[3] = createVector(rect_x, rect_y+rect_width);
     
-    //Here is where we really initilize the ball.
+    //Here is where we really initialize the ball.
     ball = new Ball(ball_x,ball_y,ball_size,poly);
 }
 
@@ -272,11 +294,6 @@ function draw() {
         }
     }
 
-    
-
-
-    
-
     //Set background color
     background(colors[0]);
 
@@ -287,7 +304,7 @@ function draw() {
     ellipse(middle_x,middle_y,starting_rotation_radius*2);
 
     if(DISPLAY_TEXT_SCORE){
-        fill(TEXT_COLOR[0], TEXT_COLOR[1], TEXT_COLOR[2]);
+        fill(colors[1]);
         text(score , middle_x, middle_y);
     }
 

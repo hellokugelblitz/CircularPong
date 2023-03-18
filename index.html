@@ -10,9 +10,13 @@
     <title>Circular Pong :)</title>
   </head>
   <body>
-    <button onclick="rainbow_mode()">Try it</button>
+    <div class="controls" style="display: flex;">
+      <button onclick="rainbow_mode()" class="btn">Rainbow mode</button>
+      <button onclick="gravity_mode()" class="btn" style="margin-left: 10px;">Gravity mode</button>
+      <button onclick="text_score()" class="btn" style="margin-left: 10px;">Display text score</button>
+    </div>
     <div class="game">
-      <canvas id="myCanvas"></canvas>
+    <canvas id="myCanvas"></canvas>
     </div>
   </body>
 </html>
