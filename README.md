@@ -1,6 +1,8 @@
 # CircularPong
 This is a little game I made in p5js as a prototype. You play pong by yourself in a circle.
 
+You can also try a live demo here: https://people.rit.edu/jgl2651/JACK/Projects/CircularPong/index.html
+
 Here's what it looks like:
 </br>
 <img src="gamedemo.png" width="500" height="450" />
